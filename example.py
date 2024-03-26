@@ -1,3 +1,9 @@
+import sqlite3
+import streamlit as st
+from pymongo import MongoClient
+import ssl
+import mysql.connector
+
 conn = st.connection('mysql', type='sql')
 with conn.session as s:
     # s.execute('CREATE TABLE IF NOT EXISTS pet_owners (person TEXT, pet TEXT);')
